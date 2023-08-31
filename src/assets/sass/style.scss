@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('~@/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url('~@/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+* {
+  font-family: 'Montserrat' !important;
+}
+
+/* html, body {
+  overflow: hidden !important;
+} */
+
+.montserrat-alternates {
+  font-family: 'Montserrat Alternates' !important;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-25 {
+  gap: 25px;
+}
+
+
+.w100 {
+  width: 100%;
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.h90vh {
+  height: 90vh;
+}
+
+.loader-animation {
+  animation: load 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes load {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+p, h1, .title, .text-h1, .text-h2 {
+  text-transform: capitalize !important;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+
+
+
+:root {
+  --normal-color: rgb(212, 218, 228);
+  --fighting-color: rgb(224, 77, 77);
+  --flying-color: rgb(243, 137, 243);
+  --poison-color: rgb(154, 240, 154);
+  --ground-color: rgb(238, 238, 146);
+  --rock-color: rgb(189, 189, 189);
+  --bug-color: rgb(125, 245, 125);
+  --ghost-color: rgb(212, 105, 212);
+  --steel-color: rgb(212, 218, 228);
+  --fire-color: rgb(241, 161, 129);
+  --water-color: rgb(173, 216, 230);
+  --grass-color: rgb(132, 216, 132);
+  --electric-color: rgb(255, 255, 149);
+  --psychic-color: rgb(250, 195, 205);
+  --ice-color: rgb(150, 216, 238);
+  --dragon-color: rgb(240, 114, 240);
+  --dark-color: rgb(212, 218, 228);
+  --fairy-color: rgb(255, 181, 192);
+  --secondary-dark: #18181f;
+  --base-dark: #121218;
+}
+
+.normal {
+  background-color: var(--normal-color) !important;
+}
+
+.fighting {
+  background-color: var(--fighting-color) !important;
+}
+
+.flying {
+  background-color: var(--flying-color) !important;
+}
+
+.poison {
+  background-color: var(--poison-color) !important;
+}
+
+.ground {
+  background-color: var(--ground-color) !important;
+}
+
+.rock {
+  background-color: var(--rock-color) !important;
+}
+
+.bug {
+  background-color: var(--bug-color) !important;
+}
+
+.ghost {
+  background-color: var(--ghost-color) !important;
+}
+
+.steel {
+  background-color: var(--steel-color) !important;
+}
+
+.fire {
+  background-color: var(--fire-color) !important;
+}
+
+.water {
+  background-color: var(--water-color) !important;
+}
+
+.grass {
+  background-color: var(--grass-color) !important;
+}
+
+.electric {
+  background-color: var(--electric-color) !important;
+}
+
+.psychic {
+  background-color: var(--psychic-color) !important;
+}
+
+.ice {
+  background-color: var(--ice-color) !important;
+}
+
+.dragon {
+  background-color: var(--dragon-color) !important;
+}
+
+.dark {
+  background-color: var(--dark-color) !important;
+}
+
+.fairy { 
+  background-color: var(--fairy-color) !important;
+}
+
+.dark-mode {
+  & > * {
+    color: #fff !important;
+    background: var(--secondary-dark) !important;
+  }
+  .v-card,
+  .pokemon-modal-card,
+  .v-btn {
+    background: var(--base-dark) !important;
+    & > * {
+      color: #fff !important;
+    }
+  }
+}
+
+.v-row {
+  margin-bottom: 0 !important;
+}
